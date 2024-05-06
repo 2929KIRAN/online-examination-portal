@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exam portal Verification</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">SmartEdu</p>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="home"><a href="/">HOME</a></li>
+        <li id="login in"><a href="/login">LOGIN</a></li>
+      </ul>
+    </div>
+  </nav>
+</head>
+
+<body>
+  <div class="container">
+  <h1 class="heading" style="color:rgb(0,0,0); background-color: whitesmoke; border-radius: 10px;">Sign Up</h1>
+  <form action="/signup" method="post" style="margin: auto; width: 238px;">
+    <label class="info">
+      Name :
+      <input type="text"  name="name" id="name" placeholder="Enter Your Name" multiple required />
+    </label>
+    <br />
+    <label class="info">
+      Adhaar Number :
+      <input type="number" name="adhaarNumber" id="adhaar" placeholder="Enter the Adhaar Number" multiple required/>
+    </label>
+    <br />
+    <label class="info">
+      Phone Number :
+      <input type="number" name="phoneNumber" id="phone" placeholder="Enter your phone number" minlength="10" multiple required/>
+    </label>
+    <br />
+    <label class="info">
+      Degree :
+      <input type="text" name="degree" id="degree" placeholder="Enter your Degree" multiple required/>
+    </label>
+    <br />
+    <button type="submit">sign up</button>
+      <span><%= errorMessage %></span>
+  </form>
+</div>
+  </div>
+</body>
+
+
+<script type="text/javascript" src="/script/actions.js"></script>
+</html>

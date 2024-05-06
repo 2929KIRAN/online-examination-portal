@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SmartEducation Login</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="pesce_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <p class="navbar-brand">SmartEdu</p>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="home"><a href="/">HOME</a></li>
+          <li id="sign up"><a href="/signup">SIGN UP</a></li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <!-- <img src="pesce_logo.png" alt="Image Load Error" width="60" height="60" ali>
+    <img src="th.png" alt="Image Load Error" width="60" height="60" ali>  -->
+    <h1 class="heading" style="color: blue;">Student Login</h1>
+    <form action="/otp_verify" method="post">
+      <div class="container">
+        <label class="info">
+          One Time Password :
+          <input
+            type="number"
+            name="otp"
+            id="otp"
+            placeholder="Enter OTP"
+            multiple
+            required
+          />
+        </label>
+        <br />
+        <button type="submit">verify</button>
+      </div>
+    </form>
+  </body>
+  <span><%= errorMessage %></span>
+</html>
